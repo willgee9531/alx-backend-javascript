@@ -1,8 +1,8 @@
 export default function createIteratorObject(report) {
   return {
     [Symbol.iterator]: function* () {
-      for (const values of Object.values(report.allEmployees)) {
-        for (const value of values) {
+      for (const key of Object.keys(report.allEmployees)) {
+        for (const value of report.allEmployees[key]) {
           yield value;
         }
       }
