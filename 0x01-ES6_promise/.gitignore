@@ -4,3 +4,4 @@ babel.config.js
 package.json
 .eslintrc.js
 utils.js
+main.js
